@@ -40,7 +40,7 @@ public class VeiculoController {
         return ResponseEntity.ok(service.getById(id));
     }
 
-    @GetMapping("/detalhado/{id}")
+    @GetMapping("/detalhes/{id}")
     public ResponseEntity<VeiculoDetalhesDtoResponse> getDetalhado(@PathVariable Long id){
         return ResponseEntity.ok(service.getDetalhadoById(id));
     }
